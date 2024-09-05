@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debunkr: AI Fact Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,184;1,184&display=swap" rel="stylesheet"></head>
+<body>
+    <header>
+        <h1>Debunkr: AI Fact Checker</h1>
+        <p>Upload or record audio to check facts in real-time.</p>
+    </header>
+
+    <main class="container">
+        <section class="video-input">
+            <h2>The Input</h2>
+            <div class="upload-section">
+                <h3>Upload a Video</h3>
+                <input type="file" id="videoInput" accept="video/*">
+                <button class="primary-btn" id="startFactCheck">Start Fact Check</button>
+            </div>
+
+            <div class="record-section">
+                <h3>Or, Record Audio</h3>
+                <div class="record-buttons">
+                    <button class="primary-btn" id="startRecording">Start Recording</button>
+                    <button class="secondary-btn" id="stopRecording" disabled>Stop Recording</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="transcript-section">
+            <h2>Transcript</h2>
+            <div id="transcriptOutput" class="output-box"></div>
+        </section>
+
+        <section class="results-section">
+            <h2>Fact Check Results</h2>
+            <div id="factCheckResults" class="output-box"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
